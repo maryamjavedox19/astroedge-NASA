@@ -26,7 +26,7 @@ const Container = styled.div`
   display: flex;
 
   &:before {
-    background-color:#000000;
+    background-color:#000207;
     no-repeat fixed;
     content: '';
     position: absolute;
