@@ -1,8 +1,5 @@
 import React from 'react'
 import styled from 'styled-components';
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display:ital@0;1&family=Poppins:ital,wght@0,200;0,300;1,200&display=swap');
-</style>
 
 
 export default function Header() {
@@ -28,6 +25,7 @@ display:flex;
 align-items:center;
 justify-content:space-between;
 font-family:font-family: 'Poppins', sans-serif;
+color:#DCDCDC;
 
 
 
