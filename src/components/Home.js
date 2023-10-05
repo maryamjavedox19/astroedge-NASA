@@ -80,7 +80,6 @@ const Container = styled.div`
     right:25rem;
     border: 1px solid white;
     border-radius:25px;
-
   }
 `;
 
