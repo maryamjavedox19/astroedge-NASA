@@ -10,6 +10,7 @@ import Venus from './components/Venus';
 import Jupiter from './components/Jupiter';
 import Saturn from './components/Saturn';
 import Uranus from './components/Uranus';
+import Neptune from './components/Neptune';
 
 
 
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/jupiter" element={<Jupiter />} />
         <Route path="/saturn" element={<Saturn/>} />
         <Route path="/uranus" element={<Uranus/>} />
+        <Route path="/neptune" element={<Neptune/>} />
         <Route path="/dwarf" element={<Dwarfplanets />} />
         <Route path="/moon" element={<Moon />} />
         

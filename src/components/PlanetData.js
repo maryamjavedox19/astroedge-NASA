@@ -198,32 +198,32 @@ export const UranusDataRight = [
 export const NeptuneDataLeft = [
     {
       heading:"Atmosphere",
-      paragraph:""
+      paragraph:"It’s mostly hydrogen and helium with just a little bit of methane."
     },
     {
-        heading:"Day Length",
-        paragraph:""
+        heading:"Composition",
+        paragraph:"Most (80% or more) of the planet's mass is made up of a hot dense fluid of 'icy' materials – water, methane, and ammonia – above a small, rocky core. Of the giant planets, Neptune is the densest"
       
     },
     {
-        heading:"",
-        paragraph:""
+        heading:"Size and Distance",
+        paragraph:"It has a radius of 15,299.4 miles (24,622 kilometers), approx. four times wider than Earth"
     },
 
 ];
 export const NeptuneDataRight = [
     {
-      heading:"",
-      paragraph:""
+      heading:"Great Dark Spot",
+      paragraph:"The Great Dark Spot was a huge spinning storm in the southern hemisphere of Neptune. Winds in this storm were measured at speeds of up to 1,500 miles per hour. These were the strongest winds ever recorded on any planet in the solar system"
     },
     {
-        heading:"",
-        paragraph:""
+        heading:"Day Length",
+        paragraph:"A Neptunian day is around 16 hours long & it takes 165 earth years to go around the sun"
       
     },
     {
-        heading:"",
-        paragraph:""
+        heading:"Colour",
+        paragraph:"Neptune is a more vivid, brighter blue than Uranus as the methane in Neptune's atmosphere absorbs red light and reflects blue"
     },
 
 ];
