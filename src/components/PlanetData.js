@@ -165,27 +165,27 @@ export const SaturnDataRight = [
 export const UranusDataLeft = [
     {
       heading:"Atmosphere",
-      paragraph:""
+      paragraph:"It’s mostly hydrogen and helium, with a small amount of methane and traces of water and ammonia. The methane gives Uranus its signature blue color"
     },
     {
         heading:"Day Length",
-        paragraph:""
+        paragraph:"One day on Uranus lasts for approx 17 hours and 1 Uranian year is about 84 Earth years (30,687 Earth days)."
       
     },
     {
-        heading:"",
-        paragraph:""
+        heading:"Size and Distance",
+        paragraph:"It has a radius of 15,759.2 miles (25,362 kilometers). Uranus is 4 times wider than Earth."
     },
 
 ];
 export const UranusDataRight = [
     {
-      heading:"",
-      paragraph:""
+      heading:"Temperature",
+      paragraph:"Uranus is the only planet whose equator is nearly at a right angle to its orbit, with a tilt of 97.77 degrees. This unique tilt causes the most extreme seasons in the solar system. For nearly a quarter of each Uranian year, the Sun shines directly over each pole, plunging the other half of the planet into a 21-year-long, dark winter."
     },
     {
-        heading:"",
-        paragraph:""
+        heading:"No Life",
+        paragraph:"The temperatures, pressures, and materials that characterize this planet are most likely too extreme and volatile for organisms to adapt to."
       
     },
     {
