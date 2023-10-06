@@ -34,7 +34,7 @@ const Saturn = () => {
         {/*<Image src="images/Mars.png"/>*/}
         
         <MainHeading>Saturn</MainHeading>
-        <SubHeading>The Ringed Jewel of the system</SubHeading>
+        <SubHeading>The Ringed Jewel</SubHeading>
       </MinorContainer>
       <MinorContainer>
       <UnOrderedList>{DataRight}</UnOrderedList>
@@ -43,15 +43,15 @@ const Saturn = () => {
       <MainContainer>
       <MinorContainerFooter>
         <IconImage src="images/JupiterIcon.png"/>
-        <ButtonLink to="/mars"> ⇦ Jupiter</ButtonLink>
+        <ButtonLink to="/jupiter"> ⇦ Jupiter</ButtonLink>
         
       </MinorContainerFooter>
       <MinorContainerFooter>
         <Button>Start Tour </Button>
       </MinorContainerFooter>
       <MinorContainerFooter>
-        <IconImage src="images/SaturnIcon.png" style={{height:"6em",width:"6em"}}/>
-        <ButtonLink to="/saturn">Saturn ⇨</ButtonLink>
+        <IconImage src="images/UranusIcon.png" style={{height:"7em",width:"7em"}}/>
+        <ButtonLink to="/uranus">Uranus ⇨</ButtonLink>
       </MinorContainerFooter>
       </MainContainer>
     </Container>
@@ -114,7 +114,7 @@ font-family: 'Poppins', sans-serif;
 font-weight:bolder;
 font-size:1.35em;
 margin-top:1.5em;
-text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgb(255,234,172);
+text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgb(249,225,181);
 `;
 
 const MainHeading=styled.h1`
@@ -125,7 +125,7 @@ left:50%;
 transform: translate(-50%, -50%);
 font-size:10em;
 font-weight:bolder;
-text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgb(175,100,31);
+text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgb(249,225,181);
 `;
 const SubHeading=styled.h3`
 font-family: 'Rajdhani','Poppins', sans-serif;
@@ -135,7 +135,7 @@ left:50%;
 transform: translate(-50%, -50%);
 font-size:3em;
 font-weight:bolder;
-text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgb(175,100,31);
+text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgb(249,225,181);
 `;
 
 
@@ -145,12 +145,12 @@ font-weight:bold;
 margin-top:0.5em;
 margin-left:1em;
 font-size:1em;
-text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgb(175,100,31);
+text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgb(249,225,181);
 `;
 
 const Button=styled.button`
 font-family: 'Poppins', sans-serif;
-text-shadow: 10px 7px 17px rgba(34, 34, 34, 1),-4px 12px 24px rgb(175,100,31);
+text-shadow: 10px 7px 20px rgba(34, 34, 34, 1),-4px 12px 30px rgb(249,225,181);
 width:15rem;
 height:3rem;
 padding:0.5rem 1rem;

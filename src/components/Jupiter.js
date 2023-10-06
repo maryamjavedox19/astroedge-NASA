@@ -50,7 +50,7 @@ const Jupiter = () => {
         <Button>Start Tour </Button>
       </MinorContainerFooter>
       <MinorContainerFooter>
-        <IconImage src="images/SaturnIcon.png" style={{height:"6em",width:"6em"}}/>
+        <IconImage src="images/SaturnIcon.png" style={{height:"6.2em",width:"6.2em"}}/>
         <ButtonLink to="/saturn">Saturn ⇨</ButtonLink>
       </MinorContainerFooter>
       </MainContainer>

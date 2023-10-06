@@ -133,32 +133,31 @@ export const JupiterDataRight = [
 export const SaturnDataLeft = [
     {
       heading:"Atmosphere",
-      paragraph:""
+      paragraph:"Saturn has a predominantly hydrogen and helium atmosphere, similar to Jupiter. It also contains traces of methane, ammonia, and other compounds"
     },
     {
         heading:"Day Length",
-        paragraph:""
-      
+        paragraph:"A day on Saturn, as measured by its rotation, lasts approximately 10 hours, 33 minutes, and 38 seconds"
     },
     {
-        heading:"",
-        paragraph:""
+        heading:"Hexagonal Storm",
+        paragraph:"Saturn has a persistent hexagonal-shaped storm at its north pole, which has been observed for decades"
     },
 
 ];
 export const SaturnDataRight = [
     {
-      heading:"",
-      paragraph:""
+      heading:"Rings of Saturn",
+      paragraph:"Saturn is famous for its stunning ring system, which is composed mainly of ice particles and debris"
     },
     {
-        heading:"",
-        paragraph:""
+        heading:"Titan",
+        paragraph:"Saturn's largest moon, known for its thick atmosphere and the presence of lakes and rivers of liquid hydrocarbons"
       
     },
     {
-        heading:"",
-        paragraph:""
+        heading:"Cassini Division",
+        paragraph:"A prominent gap in Saturn's rings, separating the A and B rings"
     },
 
 ];
