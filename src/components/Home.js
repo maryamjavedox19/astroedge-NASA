@@ -27,7 +27,7 @@ const Container = styled.div`
 
   &:before {
     background-color:#000000;
-    no-repeat fixed;
+    no-repeat: fixed;
     content: '';
     position: absolute;
     top: 0;
