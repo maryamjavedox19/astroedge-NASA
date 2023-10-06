@@ -2,14 +2,11 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Planets from './components/Planets';
-<<<<<<< HEAD
 import Moon from './components/Moon';
-=======
 import Mars from './components/Mars';
->>>>>>> b8107a538bf0a852505e87bfdcaf9957926422e3
 import Dwarfplanets from './components/Dwarfplanets';
-import Moon from './components/Moon';
-import Mars from './components/Mars';
+import Mercury from './components/Mercury';
+
 
 
 export default function App() {
@@ -18,18 +15,14 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/planets" element={<Planets />} />
-<<<<<<< HEAD
+        <Route path="/mercury" element={<Mercury />} />
         <Route path="/mars" element={<Mars />} />
         <Route path="/dwarf" element={<Dwarfplanets />} />
-=======
-<<<<<<<<< Temporary merge branch 1
-        <Route path="/mars" element={<Mars />} />
-=========
->>>>>>> c5e1f2bd105136dbacd6d12c338e8ca46d5a47fb
+
+
         <Route path="/moon" element={<Moon />} />
         
 
->>>>>>>>> Temporary merge branch 2
       </Routes>
     </Router>
   );
