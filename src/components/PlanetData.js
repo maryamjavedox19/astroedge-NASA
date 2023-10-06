@@ -35,32 +35,32 @@ export const MercuryDataRight = [
 export const VenusDataLeft = [
     {
       heading:"Atmosphere",
-      paragraph:""
+      paragraph:"Venus has a dense atmosphere consisting mainly of carbon dioxide (96.5%), with traces of nitrogen and sulfur dioxide. It is characterized by a runaway greenhouse effect, resulting in extreme heat and pressure on the surface"
     },
     {
         heading:"Day Length",
-        paragraph:""
+        paragraph:" Venus has an extremely slow rotation, with a day lasting approximately 243 Earth days, making it longer than its year"
       
     },
     {
-        heading:"",
-        paragraph:""
+        heading:"Aphrodite Terra",
+        paragraph:"This is a large highland region on Venus, known for its varied topography, including mountains, valleys, and plains"
     },
 
 ];
 export const VenusDataRight = [
     {
-      heading:"",
-      paragraph:""
+      heading:"Maxwell Montes",
+      paragraph:"These are the highest mountains on Venus, reaching altitudes of up to 11 kilometers (6.8 miles). They are primarily composed of rocky material."
     },
     {
-        heading:"",
-        paragraph:""
+        heading:"Venusian Volcanoes",
+        paragraph:"Venus has numerous volcanoes, some of which are estimated to be active"
       
     },
     {
-        heading:"",
-        paragraph:""
+        heading:"Coronae",
+        paragraph:"Circular or elliptical features on Venus, believed to be the result of upwelling and mantle plumes"
     },
 
 ];
