@@ -2,10 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import Header from "./Header";
 import { Link } from "react-router-dom";
-import {MarsDataLeft,MarsDataRight} from "./PlanetData";
-
-const Mars = () => {
-  const DataLeft=MarsDataLeft.map(data=>{
+import { JupiterDataLeft,JupiterDataRight } from "./PlanetData";
+const Jupiter = () => {
+  const DataLeft=JupiterDataLeft.map(data=>{
     return (
       <>
       <ListItems>{data.heading}</ListItems>
@@ -14,7 +13,7 @@ const Mars = () => {
     )
   })
 
-  const DataRight=MarsDataRight.map(data=>{
+  const DataRight=JupiterDataRight.map(data=>{
     return (
       <>
       <ListItems>{data.heading}</ListItems>
@@ -34,24 +33,25 @@ const Mars = () => {
       <MinorContainer>
         {/*<Image src="images/Mars.png"/>*/}
         
-        <MainHeading>Mars</MainHeading>
-        <SubHeading>The Red Planet</SubHeading>
+        <MainHeading>Jupiter</MainHeading>
+        <SubHeading>A Gigantic World of Moons</SubHeading>
       </MinorContainer>
       <MinorContainer>
-        <UnOrderedList>{DataRight}</UnOrderedList>
+      <UnOrderedList>{DataRight}</UnOrderedList>
       </MinorContainer>
       </MainContainer>
       <MainContainer>
       <MinorContainerFooter>
-        <IconImage src="images/venus.png"/>
-        <ButtonLink to="/venus"> ⇦ Venus</ButtonLink>
+        <IconImage src="images/MarsIcon.png"/>
+        <ButtonLink to="/mars"> ⇦ Mars</ButtonLink>
+        
       </MinorContainerFooter>
       <MinorContainerFooter>
         <Button>Start Tour </Button>
       </MinorContainerFooter>
       <MinorContainerFooter>
-      <IconImage src="images/JupiterIcon.png"/>
-        <ButtonLink to="/jupiter">Jupiter ⇨ </ButtonLink>
+        <IconImage src="images/SaturnIcon.png" style={{height:"6em",width:"6em"}}/>
+        <ButtonLink to="/saturn">Saturn ⇨</ButtonLink>
       </MinorContainerFooter>
       </MainContainer>
     </Container>
@@ -61,7 +61,7 @@ const Mars = () => {
 
 const Container = styled.div`
 background-color:black;
-background-image: url("images/mars bg.jpg");
+background-image: url("images/jupiter bg.jpg");
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -84,6 +84,8 @@ const MainContainer = styled.div`
 display:flex;
 width:100%;
 height:fit-content;
+margin-bottom:0;
+
 `;
 
 
@@ -110,9 +112,9 @@ list-style:none;
 const ListItems=styled.li`
 font-family: 'Poppins', sans-serif;
 font-weight:bolder;
-font-size:1.5em;
+font-size:1.35em;
 margin-top:1.5em;
-text-shadow: 4px 2px 1px #222;
+text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgb(255,234,172);
 `;
 
 const MainHeading=styled.h1`
@@ -123,7 +125,7 @@ left:50%;
 transform: translate(-50%, -50%);
 font-size:10em;
 font-weight:bolder;
-text-shadow: 4px 2px 1px rgba(71, 68, 70, 0.99),-8px 6px 12px rgba(199, 92, 60, 1);
+text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgb(175,100,31);
 `;
 const SubHeading=styled.h3`
 font-family: 'Rajdhani','Poppins', sans-serif;
@@ -133,7 +135,7 @@ left:50%;
 transform: translate(-50%, -50%);
 font-size:3em;
 font-weight:bolder;
-text-shadow: 4px 2px 1px rgba(71, 68, 70, 0.99),-8px 6px 12px rgba(199, 92, 60, 1);
+text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgb(175,100,31);
 `;
 
 
@@ -143,13 +145,12 @@ font-weight:bold;
 margin-top:0.5em;
 margin-left:1em;
 font-size:1em;
-text-shadow: 4px 2px 1px #222;
+text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgb(175,100,31);
 `;
 
 const Button=styled.button`
 font-family: 'Poppins', sans-serif;
-box-shadow: 7px 7px 8px 4px rgba(54, 54, 54, 0.83);
-text-shadow: 4px 2px 1px #222;
+text-shadow: 10px 7px 17px rgba(34, 34, 34, 1),-4px 12px 24px rgb(175,100,31);
 width:15rem;
 height:3rem;
 padding:0.5rem 1rem;
@@ -167,7 +168,7 @@ border: 2px solid white;
 border-radius:25px;
 font-weight:bolder;
 font-size:1.5em;
-
+box-shadow: 10px 3px 15px -3px rgba(253, 228, 165, 1);
 &:hover {
   background-color: #fff;
   color:#000;
@@ -182,20 +183,17 @@ font-size:1.5em;
 const ButtonLink = styled(Link)`
 font-family: 'Poppins', sans-serif;
 top:25rem;
-padding:0.5em 1em;
+padding:0em 1em;
 text-decoration: none;
 border: none;
-border-radius: 5px;
 cursor: pointer;
 transition: background-color 0.3s ease-in-out;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-bottom:0.28em;
+margin-bottom:0;
 background-color:transparent;
 color:#fff;
 font-size:2em;
-text-shadow: 4px 2px 1px #000;
+
+text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgb(255,234,172);
 &:hover {
   text-decoration:underline;
   text-decoration-thickness:2px;
@@ -203,4 +201,4 @@ text-shadow: 4px 2px 1px #000;
 }
 `;
 
-export default Mars
+export default Jupiter

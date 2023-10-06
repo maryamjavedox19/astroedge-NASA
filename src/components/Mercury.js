@@ -66,7 +66,6 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 height: 100vh;
 overflow: auto;
-height:fit-content;
 `;
 /*
 const Image = styled.img`
