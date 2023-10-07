@@ -27,7 +27,7 @@ const Container = styled.div`
 
   &:before {
     background-color:#000207;
-    no-repeat fixed;
+    no-repeat: fixed;
     content: '';
     position: absolute;
     top: 0;
@@ -80,6 +80,10 @@ const Container = styled.div`
     right:25rem;
     border: 1px solid white;
     border-radius:25px;
+
+    &:hover{
+      cursor:pointer;
+    }
   }
 `;
 

@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import Header from './Header';
-import Slider from './Slider';
 
 export default function Moon() {
   return (

@@ -24,7 +24,7 @@ background-color:transparent;
 display:flex;
 align-items:center;
 justify-content:space-between;
-font-family:font-family: 'Poppins', sans-serif;
+font-family: 'Poppins', sans-serif;
 color:#DCDCDC;
 
 
@@ -46,6 +46,10 @@ ul{
 li{
   display:flex;
   margin-left:2rem;
+
+  &:hover{
+    cursor:pointer;
+  }
 
 }
 
