@@ -7,27 +7,27 @@ export default function Header() {
   return (
     <HeaderContainer>
       <h3>
-        <Link to="/">Space</Link>
+        <Link to="/" style={{ textDecoration: "none", color: "white" }}>Space</Link>
       </h3>
       <ul>
         <li>
-          <Link to="/introduction">Introduction</Link>
+          <Link to="/introduction" style={{ textDecoration: "none", color: "white" }}>Introduction</Link>
         </li>
 
         <li>
-          <Link to="/contact">contact</Link>
+          <Link to="/contact" style={{ textDecoration: "none", color: "white" }}>Contact</Link>
         </li>
 
         <li>
-          <Link to="/asteroid">Asteroid</Link>
+          <Link to="/asteroid" style={{ textDecoration: "none", color: "white" }}>Asteroid</Link>
         </li>
 
         <li>
-          <Link to="/moon">Moon</Link>
+          <Link to="/moon" style={{ textDecoration: "none", color: "white" }}>Moon</Link>
         </li>
 
         <li>
-          <Link to="/dwarf">Dwarf Planets</Link>
+          <Link to="/dwarf" style={{ textDecoration: "none", color: "white" }}>Dwarf Planets</Link>
         </li>
 
 
@@ -39,7 +39,7 @@ export default function Header() {
 }
 
 const HeaderContainer = styled.div`
-  width: 100%;
+  width: 70%;
   height: 5rem;
   background-color: transparent;
   display: flex;
@@ -58,7 +58,7 @@ const HeaderContainer = styled.div`
   ul {
     margin-left: 7rem;
     list-style: none;
-    text-decoration: none;
+    text-decoration: none !important;
     color: white;
     display: flex;
 

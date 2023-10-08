@@ -2,58 +2,57 @@ import React from "react";
 import styled from "styled-components";
 import Header from "./Header";
 import { Link } from "react-router-dom";
-import { UranusDataLeft,UranusDataRight } from "./PlanetData";
+import { UranusDataLeft, UranusDataRight } from "./PlanetData";
 const Uranus = () => {
-  const DataLeft=UranusDataLeft.map(data=>{
+  const DataLeft = UranusDataLeft.map(data => {
     return (
       <>
-      <ListItems>{data.heading}</ListItems>
-      <Paragraph>{data.paragraph}</Paragraph>
+        <ListItems>{data.heading}</ListItems>
+        <Paragraph>{data.paragraph}</Paragraph>
       </>
     )
   })
 
-  const DataRight=UranusDataRight.map(data=>{
+  const DataRight = UranusDataRight.map(data => {
     return (
       <>
-      <ListItems>{data.heading}</ListItems>
-      <Paragraph>{data.paragraph}</Paragraph>
+        <ListItems>{data.heading}</ListItems>
+        <Paragraph>{data.paragraph}</Paragraph>
       </>
     )
   })
 
   return (
     <>
-    <Container>
-      <Header/>
-      <MainContainer>
-      <MinorContainer>
-        <UnOrderedList>{DataLeft}</UnOrderedList>
-      </MinorContainer>
-      <MinorContainer>
-        {/*<Image src="images/Mars.png"/>*/}
-        
-        <MainHeading>Uranus</MainHeading>
-        <SubHeading>The Cosmic Ice Planet</SubHeading>
-      </MinorContainer>
-      <MinorContainer>
-      <UnOrderedList>{DataRight}</UnOrderedList>
-      </MinorContainer>
-      </MainContainer>
-      <MainContainer>
-      <MinorContainerFooter>
-        <IconImage src="images/SaturnIcon.png" style={{height:"6em",width:"6em"}}/>
-        <ButtonLink to="/saturn"> ⇦ Saturn</ButtonLink>
-      </MinorContainerFooter>
-      <MinorContainerFooter>
-        <Button>Start Tour </Button>
-      </MinorContainerFooter>
-      <MinorContainerFooter>
-      <IconImage src="images/NeptuneIcon.png" />
-        <ButtonLink to="/neptune">Neptune ⇨ </ButtonLink>
-      </MinorContainerFooter>
-      </MainContainer>
-    </Container>
+      <Container>
+        <Header />
+        <MainContainer>
+          <MinorContainer>
+            <UnOrderedList>{DataLeft}</UnOrderedList>
+          </MinorContainer>
+          <MinorContainer>
+            {/*<Image src="images/Mars.png"/>*/}
+
+            <MainHeading>Uranus</MainHeading>
+            <SubHeading>The Cosmic Ice Planet</SubHeading>
+          </MinorContainer>
+          <MinorContainer>
+            <UnOrderedList>{DataRight}</UnOrderedList>
+          </MinorContainer>
+        </MainContainer>
+        <MainContainer>
+          <MinorContainerFooter>
+            <IconImage src="images/SaturnIcon.png" style={{ height: "6em", width: "6em" }} />
+            <ButtonLink to="/saturn"> ⇦ Saturn</ButtonLink>
+          </MinorContainerFooter>
+          <MinorContainerFooter>
+          </MinorContainerFooter>
+          <MinorContainerFooter>
+            <IconImage src="images/NeptuneIcon.png" />
+            <ButtonLink to="/neptune">Neptune ⇨ </ButtonLink>
+          </MinorContainerFooter>
+        </MainContainer>
+      </Container>
     </>
   )
 }
@@ -102,13 +101,13 @@ align-items:center;
 gap:0px;
 `;
 
-const UnOrderedList=styled.ul`
+const UnOrderedList = styled.ul`
 margin-left:3em;
 margin-right:3em;
 list-style:none;
 `;
 
-const ListItems=styled.li`
+const ListItems = styled.li`
 font-family: 'Poppins', sans-serif;
 font-weight:bolder;
 font-size:1.35em;
@@ -116,7 +115,7 @@ margin-top:1.5em;
 text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgb(23,183,225);
 `;
 
-const MainHeading=styled.h1`
+const MainHeading = styled.h1`
 font-family: 'Raleway Dots', 'Poppins';
 position:absolute;
 top:50%;
@@ -126,7 +125,7 @@ font-size:10em;
 font-weight:bolder;
 text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgb(23,183,225);
 `;
-const SubHeading=styled.h3`
+const SubHeading = styled.h3`
 font-family: 'Rajdhani','Poppins', sans-serif;
 position:absolute;
 bottom:25%;
@@ -138,7 +137,7 @@ text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgb(23,183,225);
 `;
 
 
-const Paragraph=styled.p`
+const Paragraph = styled.p`
 font-family: 'Poppins', sans-serif;
 font-weight:bold;
 margin-top:0.5em;
@@ -147,7 +146,7 @@ font-size:1em;
 text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgb(23,183,225);
 `;
 
-const Button=styled.button`
+const Button = styled.button`
 font-family: 'Poppins', sans-serif;
 text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgb(23,183,225);
 width:15rem;

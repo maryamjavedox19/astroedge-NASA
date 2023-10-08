@@ -17,7 +17,7 @@ export default function Introduction() {
 
 
           <p>
-            Email:spcetravelwithus@gmail.component
+            Email:spcetravelwithus@gmail.com
           </p>
           <br></br>
 
@@ -49,7 +49,9 @@ align-items:center;
 p{
   width:34vw;
   line-height:1.3vw;
-  font-size:1.1rem
+  font-size:1.1rem;
+  letter-spacing:0.7px;
+
 
   
 }

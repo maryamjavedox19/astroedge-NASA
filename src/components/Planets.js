@@ -20,12 +20,17 @@ function Planets() {
             <ButtonLink to="/mercury">MERCURY</ButtonLink>
           </ImageContainer>
           <ImageContainer>
-            <Image src="images/venus.jpg" alt="Image 2" />
-            <ButtonLink to="/venus">VENUS</ButtonLink>
-          </ImageContainer>
-          <ImageContainer>
+
             <Image src="images/earth.jpg" alt="Image 2" />
             <ButtonLink to="/earth">EARTH</ButtonLink>
+
+
+          </ImageContainer>
+
+
+          <ImageContainer>
+            <Image src="images/venus.jpg" alt="Image 2" />
+            <ButtonLink to="/venus">VENUS</ButtonLink>
           </ImageContainer>
           <ImageContainer>
             <Image src="images/mars.jpg" alt="Image 2" />

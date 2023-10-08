@@ -2,59 +2,58 @@ import React from "react";
 import styled from "styled-components";
 import Header from "./Header";
 import { Link } from "react-router-dom";
-import { SaturnDataLeft,SaturnDataRight } from "./PlanetData";
+import { SaturnDataLeft, SaturnDataRight } from "./PlanetData";
 const Saturn = () => {
-  const DataLeft=SaturnDataLeft.map(data=>{
+  const DataLeft = SaturnDataLeft.map(data => {
     return (
       <>
-      <ListItems>{data.heading}</ListItems>
-      <Paragraph>{data.paragraph}</Paragraph>
+        <ListItems>{data.heading}</ListItems>
+        <Paragraph>{data.paragraph}</Paragraph>
       </>
     )
   })
 
-  const DataRight=SaturnDataRight.map(data=>{
+  const DataRight = SaturnDataRight.map(data => {
     return (
       <>
-      <ListItems>{data.heading}</ListItems>
-      <Paragraph>{data.paragraph}</Paragraph>
+        <ListItems>{data.heading}</ListItems>
+        <Paragraph>{data.paragraph}</Paragraph>
       </>
     )
   })
 
   return (
     <>
-    <Container>
-      <Header/>
-      <MainContainer>
-      <MinorContainer>
-        <UnOrderedList>{DataLeft}</UnOrderedList>
-      </MinorContainer>
-      <MinorContainer>
-        {/*<Image src="images/Mars.png"/>*/}
-        
-        <MainHeading>Saturn</MainHeading>
-        <SubHeading>The Ringed Jewel</SubHeading>
-      </MinorContainer>
-      <MinorContainer>
-      <UnOrderedList>{DataRight}</UnOrderedList>
-      </MinorContainer>
-      </MainContainer>
-      <MainContainer>
-      <MinorContainerFooter>
-        <IconImage src="images/JupiterIcon.png"/>
-        <ButtonLink to="/jupiter"> ⇦ Jupiter</ButtonLink>
-        
-      </MinorContainerFooter>
-      <MinorContainerFooter>
-        <Button>Start Tour </Button>
-      </MinorContainerFooter>
-      <MinorContainerFooter>
-        <IconImage src="images/UranusIcon.png" style={{height:"7em",width:"7em"}}/>
-        <ButtonLink to="/uranus">Uranus ⇨</ButtonLink>
-      </MinorContainerFooter>
-      </MainContainer>
-    </Container>
+      <Container>
+        <Header />
+        <MainContainer>
+          <MinorContainer>
+            <UnOrderedList>{DataLeft}</UnOrderedList>
+          </MinorContainer>
+          <MinorContainer>
+            {/*<Image src="images/Mars.png"/>*/}
+
+            <MainHeading>Saturn</MainHeading>
+            <SubHeading>The Ringed Jewel</SubHeading>
+          </MinorContainer>
+          <MinorContainer>
+            <UnOrderedList>{DataRight}</UnOrderedList>
+          </MinorContainer>
+        </MainContainer>
+        <MainContainer>
+          <MinorContainerFooter>
+            <IconImage src="images/JupiterIcon.png" />
+            <ButtonLink to="/jupiter"> ⇦ Jupiter</ButtonLink>
+
+          </MinorContainerFooter>
+          <MinorContainerFooter>
+          </MinorContainerFooter>
+          <MinorContainerFooter>
+            <IconImage src="images/UranusIcon.png" style={{ height: "7em", width: "7em" }} />
+            <ButtonLink to="/uranus">Uranus ⇨</ButtonLink>
+          </MinorContainerFooter>
+        </MainContainer>
+      </Container>
     </>
   )
 }
@@ -103,13 +102,13 @@ align-items:center;
 gap:0px;
 `;
 
-const UnOrderedList=styled.ul`
+const UnOrderedList = styled.ul`
 margin-left:3em;
 margin-right:3em;
 list-style:none;
 `;
 
-const ListItems=styled.li`
+const ListItems = styled.li`
 font-family: 'Poppins', sans-serif;
 font-weight:bolder;
 font-size:1.35em;
@@ -117,7 +116,7 @@ margin-top:1.5em;
 text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgb(249,225,181);
 `;
 
-const MainHeading=styled.h1`
+const MainHeading = styled.h1`
 font-family: 'Raleway Dots', 'Poppins';
 position:absolute;
 top:50%;
@@ -127,7 +126,7 @@ font-size:10em;
 font-weight:bolder;
 text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgb(249,225,181);
 `;
-const SubHeading=styled.h3`
+const SubHeading = styled.h3`
 font-family: 'Rajdhani','Poppins', sans-serif;
 position:absolute;
 bottom:25%;
@@ -139,7 +138,7 @@ text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgb(249,225,181);
 `;
 
 
-const Paragraph=styled.p`
+const Paragraph = styled.p`
 font-family: 'Poppins', sans-serif;
 font-weight:bold;
 margin-top:0.5em;
@@ -148,7 +147,7 @@ font-size:1em;
 text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgb(249,225,181);
 `;
 
-const Button=styled.button`
+const Button = styled.button`
 font-family: 'Poppins', sans-serif;
 text-shadow: 10px 7px 20px rgba(34, 34, 34, 1),-4px 12px 30px rgb(249,225,181);
 width:15rem;

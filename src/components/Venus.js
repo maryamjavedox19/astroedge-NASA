@@ -2,58 +2,57 @@ import React from "react";
 import styled from "styled-components";
 import Header from "./Header";
 import { Link } from "react-router-dom";
-import { VenusDataLeft,VenusDataRight } from "./PlanetData";
+import { VenusDataLeft, VenusDataRight } from "./PlanetData";
 const Venus = () => {
-  const DataLeft=VenusDataLeft.map(data=>{
+  const DataLeft = VenusDataLeft.map(data => {
     return (
       <>
-      <ListItems>{data.heading}</ListItems>
-      <Paragraph>{data.paragraph}</Paragraph>
+        <ListItems>{data.heading}</ListItems>
+        <Paragraph>{data.paragraph}</Paragraph>
       </>
     )
   })
 
-  const DataRight=VenusDataRight.map(data=>{
+  const DataRight = VenusDataRight.map(data => {
     return (
       <>
-      <ListItems>{data.heading}</ListItems>
-      <Paragraph>{data.paragraph}</Paragraph>
+        <ListItems>{data.heading}</ListItems>
+        <Paragraph>{data.paragraph}</Paragraph>
       </>
     )
   })
 
   return (
     <>
-    <Container>
-      <Header/>
-      <MainContainer>
-      <MinorContainer>
-        <UnOrderedList>{DataLeft}</UnOrderedList>
-      </MinorContainer>
-      <MinorContainer>
-        {/*<Image src="images/Mars.png"/>*/}
-        
-        <MainHeading>Venus</MainHeading>
-        <SubHeading>The Planet of Fire and Desire</SubHeading>
-      </MinorContainer>
-      <MinorContainer>
-      <UnOrderedList>{DataRight}</UnOrderedList>
-      </MinorContainer>
-      </MainContainer>
-      <MainContainer>
-      <MinorContainerFooter>
-        <IconImage src="images/MercuryIcon.png"/>
-        <ButtonLink to="/mercury"> ⇦ Mercury</ButtonLink>
-      </MinorContainerFooter>
-      <MinorContainerFooter>
-        <Button>Start Tour </Button>
-      </MinorContainerFooter>
-      <MinorContainerFooter>
-        <IconImage src="images/MarsIcon.png"/>
-        <ButtonLink to="/mars">Mars ⇨ </ButtonLink>
-      </MinorContainerFooter>
-      </MainContainer>
-    </Container>
+      <Container>
+        <Header />
+        <MainContainer>
+          <MinorContainer>
+            <UnOrderedList>{DataLeft}</UnOrderedList>
+          </MinorContainer>
+          <MinorContainer>
+            {/*<Image src="images/Mars.png"/>*/}
+
+            <MainHeading>Venus</MainHeading>
+            <SubHeading>The Planet of Fire and Desire</SubHeading>
+          </MinorContainer>
+          <MinorContainer>
+            <UnOrderedList>{DataRight}</UnOrderedList>
+          </MinorContainer>
+        </MainContainer>
+        <MainContainer>
+          <MinorContainerFooter>
+            <IconImage src="images/MercuryIcon.png" />
+            <ButtonLink to="/mercury"> ⇦ Mercury</ButtonLink>
+          </MinorContainerFooter>
+          <MinorContainerFooter>
+          </MinorContainerFooter>
+          <MinorContainerFooter>
+            <IconImage src="images/MarsIcon.png" />
+            <ButtonLink to="/mars">Mars ⇨ </ButtonLink>
+          </MinorContainerFooter>
+        </MainContainer>
+      </Container>
     </>
   )
 }
@@ -102,13 +101,13 @@ align-items:center;
 gap:0px;
 `;
 
-const UnOrderedList=styled.ul`
+const UnOrderedList = styled.ul`
 margin-left:3em;
 margin-right:3em;
 list-style:none;
 `;
 
-const ListItems=styled.li`
+const ListItems = styled.li`
 font-family: 'Poppins', sans-serif;
 font-weight:bolder;
 font-size:1.35em;
@@ -116,7 +115,7 @@ margin-top:1.5em;
 text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgb(255,234,172);
 `;
 
-const MainHeading=styled.h1`
+const MainHeading = styled.h1`
 font-family: 'Raleway Dots', 'Poppins';
 position:absolute;
 top:50%;
@@ -126,7 +125,7 @@ font-size:10em;
 font-weight:bolder;
 text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgb(255,234,172);
 `;
-const SubHeading=styled.h3`
+const SubHeading = styled.h3`
 font-family: 'Rajdhani','Poppins', sans-serif;
 position:absolute;
 bottom:25%;
@@ -138,7 +137,7 @@ text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgb(255,234,172);
 `;
 
 
-const Paragraph=styled.p`
+const Paragraph = styled.p`
 font-family: 'Poppins', sans-serif;
 font-weight:bold;
 margin-top:0.5em;
@@ -147,7 +146,7 @@ font-size:1em;
 text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgb(255,234,172);
 `;
 
-const Button=styled.button`
+const Button = styled.button`
 font-family: 'Poppins', sans-serif;
 text-shadow: 10px 7px 17px rgba(34, 34, 34, 1),-4px 12px 24px rgba(44, 54, 70, 1);
 width:15rem;

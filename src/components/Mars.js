@@ -2,59 +2,58 @@ import React from "react";
 import styled from "styled-components";
 import Header from "./Header";
 import { Link } from "react-router-dom";
-import {MarsDataLeft,MarsDataRight} from "./PlanetData";
+import { MarsDataLeft, MarsDataRight } from "./PlanetData";
 
 const Mars = () => {
-  const DataLeft=MarsDataLeft.map(data=>{
+  const DataLeft = MarsDataLeft.map(data => {
     return (
       <>
-      <ListItems>{data.heading}</ListItems>
-      <Paragraph>{data.paragraph}</Paragraph>
+        <ListItems>{data.heading}</ListItems>
+        <Paragraph>{data.paragraph}</Paragraph>
       </>
     )
   })
 
-  const DataRight=MarsDataRight.map(data=>{
+  const DataRight = MarsDataRight.map(data => {
     return (
       <>
-      <ListItems>{data.heading}</ListItems>
-      <Paragraph>{data.paragraph}</Paragraph>
+        <ListItems>{data.heading}</ListItems>
+        <Paragraph>{data.paragraph}</Paragraph>
       </>
     )
   })
 
   return (
     <>
-    <Container>
-      <Header/>
-      <MainContainer>
-      <MinorContainer>
-        <UnOrderedList>{DataLeft}</UnOrderedList>
-      </MinorContainer>
-      <MinorContainer>
-        {/*<Image src="images/Mars.png"/>*/}
-        
-        <MainHeading>Mars</MainHeading>
-        <SubHeading>The Red Planet</SubHeading>
-      </MinorContainer>
-      <MinorContainer>
-        <UnOrderedList>{DataRight}</UnOrderedList>
-      </MinorContainer>
-      </MainContainer>
-      <MainContainer>
-      <MinorContainerFooter>
-        <IconImage src="images/venus.png"/>
-        <ButtonLink to="/venus"> ⇦ Venus</ButtonLink>
-      </MinorContainerFooter>
-      <MinorContainerFooter>
-        <Button>Start Tour </Button>
-      </MinorContainerFooter>
-      <MinorContainerFooter>
-      <IconImage src="images/JupiterIcon.png"/>
-        <ButtonLink to="/jupiter">Jupiter ⇨ </ButtonLink>
-      </MinorContainerFooter>
-      </MainContainer>
-    </Container>
+      <Container>
+        <Header />
+        <MainContainer>
+          <MinorContainer>
+            <UnOrderedList>{DataLeft}</UnOrderedList>
+          </MinorContainer>
+          <MinorContainer>
+            {/*<Image src="images/Mars.png"/>*/}
+
+            <MainHeading>Mars</MainHeading>
+            <SubHeading>The Red Planet</SubHeading>
+          </MinorContainer>
+          <MinorContainer>
+            <UnOrderedList>{DataRight}</UnOrderedList>
+          </MinorContainer>
+        </MainContainer>
+        <MainContainer>
+          <MinorContainerFooter>
+            <IconImage src="images/venus.png" />
+            <ButtonLink to="/venus"> ⇦ Venus</ButtonLink>
+          </MinorContainerFooter>
+          <MinorContainerFooter>
+          </MinorContainerFooter>
+          <MinorContainerFooter>
+            <IconImage src="images/JupiterIcon.png" />
+            <ButtonLink to="/jupiter">Jupiter ⇨ </ButtonLink>
+          </MinorContainerFooter>
+        </MainContainer>
+      </Container>
     </>
   )
 }
@@ -101,13 +100,13 @@ align-items:center;
 gap:0px;
 `;
 
-const UnOrderedList=styled.ul`
+const UnOrderedList = styled.ul`
 margin-left:3em;
 margin-right:3em;
 list-style:none;
 `;
 
-const ListItems=styled.li`
+const ListItems = styled.li`
 font-family: 'Poppins', sans-serif;
 font-weight:bolder;
 font-size:1.5em;
@@ -115,7 +114,7 @@ margin-top:1.5em;
 text-shadow: 4px 2px 1px #222;
 `;
 
-const MainHeading=styled.h1`
+const MainHeading = styled.h1`
 font-family: 'Raleway Dots', 'Poppins';
 position:absolute;
 top:50%;
@@ -125,7 +124,7 @@ font-size:10em;
 font-weight:bolder;
 text-shadow: 4px 2px 1px rgba(71, 68, 70, 0.99),-8px 6px 12px rgba(199, 92, 60, 1);
 `;
-const SubHeading=styled.h3`
+const SubHeading = styled.h3`
 font-family: 'Rajdhani','Poppins', sans-serif;
 position:absolute;
 bottom:25%;
@@ -137,7 +136,7 @@ text-shadow: 4px 2px 1px rgba(71, 68, 70, 0.99),-8px 6px 12px rgba(199, 92, 60, 
 `;
 
 
-const Paragraph=styled.p`
+const Paragraph = styled.p`
 font-family: 'Poppins', sans-serif;
 font-weight:bold;
 margin-top:0.5em;
@@ -146,7 +145,7 @@ font-size:1em;
 text-shadow: 4px 2px 1px #222;
 `;
 
-const Button=styled.button`
+const Button = styled.button`
 font-family: 'Poppins', sans-serif;
 box-shadow: 7px 7px 8px 4px rgba(54, 54, 54, 0.83);
 text-shadow: 4px 2px 1px #222;

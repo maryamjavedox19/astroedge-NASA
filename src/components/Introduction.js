@@ -45,8 +45,9 @@ align-items:center;
 
 p{
   width:33vw;
-  line-height:1.3vw;
-  font-size:1.1rem
+  line-height:1.4vw;
+  font-size:1.1rem;
+  letter-spacing:0.7px;
 
   
 }

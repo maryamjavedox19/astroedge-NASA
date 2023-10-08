@@ -13,9 +13,9 @@ function Home() {
           {' '}
           SO, YOU WANT TO TRAVEL TO <span>SPACE</span>
         </h1>
-        <p>Be interested, Be explorer, Be first.</p>
+        <p>Join Astroedge for an unforgettable journey!</p>
         <button>
-          <Link to="/starttour">Start Tour</Link>
+          <Link to="/starttour" style={{ textDecoration: "none", color: "white" }}>Start Tour</Link>
         </button>
         <SubContainer></SubContainer>
       </Container>
@@ -62,9 +62,14 @@ const Container = styled.div`
 
   p{
     position:absolute;
-    top:28.5rem;
-    left: 8.1rem;
-    font-size:1.2rem;
+    top:27rem;
+    left: 5.1rem;
+    font-size:1.1rem;
+    // letter-spacing:1px;
+    //font-family: 'Amatic SC', cursive;
+    font-family: "Work Sans", sans-serif;
+
+    line-height:5rem;
   }
 
 
