@@ -2,10 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import Header from "./Header";
 import { Link } from "react-router-dom";
-import {MarsDataLeft,MarsDataRight} from "./PlanetData";
-
-const Mars = () => {
-  const DataLeft=MarsDataLeft.map(data=>{
+import { MercuryDataLeft,MercuryDataRight } from "./PlanetData";
+const Mercury = () => {
+  const DataLeft=MercuryDataLeft.map(data=>{
     return (
       <>
       <ListItems>{data.heading}</ListItems>
@@ -14,7 +13,7 @@ const Mars = () => {
     )
   })
 
-  const DataRight=MarsDataRight.map(data=>{
+  const DataRight=MercuryDataRight.map(data=>{
     return (
       <>
       <ListItems>{data.heading}</ListItems>
@@ -34,24 +33,24 @@ const Mars = () => {
       <MinorContainer>
         {/*<Image src="images/Mars.png"/>*/}
         
-        <MainHeading>Mars</MainHeading>
-        <SubHeading>The Red Planet</SubHeading>
+        <MainHeading>Mercury</MainHeading>
+        <SubHeading>The Sun's Closest Neighbor</SubHeading>
       </MinorContainer>
       <MinorContainer>
-        <UnOrderedList>{DataRight}</UnOrderedList>
+      <UnOrderedList>{DataRight}</UnOrderedList>
       </MinorContainer>
       </MainContainer>
       <MainContainer>
       <MinorContainerFooter>
-        <IconImage src="images/venus.png"/>
-        <ButtonLink to="/venus"> ⇦ Venus</ButtonLink>
+        {/*<IconImage src="images/EarthIcon.png"/>
+        <ButtonLink to="/earth"> ⇦ Earth</ButtonLink>*/}
       </MinorContainerFooter>
       <MinorContainerFooter>
         <Button>Start Tour </Button>
       </MinorContainerFooter>
       <MinorContainerFooter>
-      <IconImage src="images/JupiterIcon.png"/>
-        <ButtonLink to="/jupiter">Jupiter ⇨ </ButtonLink>
+      <IconImage src="images/venus.png"/>
+        <ButtonLink to="/venus">Venus ⇨ </ButtonLink>
       </MinorContainerFooter>
       </MainContainer>
     </Container>
@@ -61,7 +60,7 @@ const Mars = () => {
 
 const Container = styled.div`
 background-color:black;
-background-image: url("images/mars bg.jpg");
+background-image: url("images/mercury bg.jpg");
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -84,6 +83,8 @@ const MainContainer = styled.div`
 display:flex;
 width:100%;
 height:fit-content;
+margin-bottom:0;
+
 `;
 
 
@@ -110,7 +111,7 @@ list-style:none;
 const ListItems=styled.li`
 font-family: 'Poppins', sans-serif;
 font-weight:bolder;
-font-size:1.5em;
+font-size:1.35em;
 margin-top:1.5em;
 text-shadow: 4px 2px 1px #222;
 `;
@@ -123,7 +124,7 @@ left:50%;
 transform: translate(-50%, -50%);
 font-size:10em;
 font-weight:bolder;
-text-shadow: 4px 2px 1px rgba(71, 68, 70, 0.99),-8px 6px 12px rgba(199, 92, 60, 1);
+text-shadow: 5px 2px 5px rgba(34, 34, 34, 1),-4px 4px 16px rgba(90, 110, 144, 1);
 `;
 const SubHeading=styled.h3`
 font-family: 'Rajdhani','Poppins', sans-serif;
@@ -133,7 +134,7 @@ left:50%;
 transform: translate(-50%, -50%);
 font-size:3em;
 font-weight:bolder;
-text-shadow: 4px 2px 1px rgba(71, 68, 70, 0.99),-8px 6px 12px rgba(199, 92, 60, 1);
+text-shadow: 4px 2px 1px rgba(71, 68, 70, 0.99),-8px 6px 12px rgb(82,102,134);
 `;
 
 
@@ -143,13 +144,14 @@ font-weight:bold;
 margin-top:0.5em;
 margin-left:1em;
 font-size:1em;
-text-shadow: 4px 2px 1px #222;
+
+text-shadow: 10px 7px 17px rgba(34, 34, 34, 1),-4px 12px 14px rgba(22, 27, 35, 1);
+text-shadow: 10px 7px 17px rgba(34, 34, 34, 1),-3px 1px 17px rgba(0, 0, 0, 1);
 `;
 
 const Button=styled.button`
 font-family: 'Poppins', sans-serif;
-box-shadow: 7px 7px 8px 4px rgba(54, 54, 54, 0.83);
-text-shadow: 4px 2px 1px #222;
+text-shadow: 10px 7px 17px rgba(34, 34, 34, 1),-4px 12px 24px rgba(44, 54, 70, 1);
 width:15rem;
 height:3rem;
 padding:0.5rem 1rem;
@@ -182,16 +184,12 @@ font-size:1.5em;
 const ButtonLink = styled(Link)`
 font-family: 'Poppins', sans-serif;
 top:25rem;
-padding:0.5em 1em;
+padding:0em 1em;
 text-decoration: none;
 border: none;
-border-radius: 5px;
 cursor: pointer;
 transition: background-color 0.3s ease-in-out;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-bottom:0.28em;
+margin-bottom:0;
 background-color:transparent;
 color:#fff;
 font-size:2em;
@@ -203,4 +201,4 @@ text-shadow: 4px 2px 1px #000;
 }
 `;
 
-export default Mars
+export default Mercury

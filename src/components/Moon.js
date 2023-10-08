@@ -108,7 +108,7 @@ const ContentContainer = styled.div`
   column-gap:2rem;
   border:2px solid white;
   margin-bottom:5rem;
-  width: 60vw;
+  width: 63vw;
   margin-left:13rem
 
 `;

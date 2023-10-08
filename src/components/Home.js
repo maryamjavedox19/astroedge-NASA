@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Header from './Header';
+import { Link } from "react-router-dom";
+
 
 function Home() {
   return (
@@ -12,7 +14,9 @@ function Home() {
           SO, YOU WANT TO TRAVEL TO <span>SPACE</span>
         </h1>
         <p>Be interested, Be explorer, Be first.</p>
-        <button>Start Tour</button>
+        <button>
+          <Link to="/starttour">Start Tour</Link>
+        </button>
         <SubContainer></SubContainer>
       </Container>
     </>
